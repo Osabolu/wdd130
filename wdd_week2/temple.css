@@ -136,7 +136,7 @@ hr{
     margin-left: 5px;
 }
 
-.info-list ul{
+ul{
   list-style-type: circle;
   padding-right: 40px;
   font-size: 10px;
