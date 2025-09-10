@@ -149,6 +149,7 @@ margin: 5px;
 
 .info-list li p{
     line-height: 1.5;
+    min-width: min-content;
 }
 
 footer{
