@@ -138,11 +138,11 @@ hr{
 
 .info-list li {
 margin-top: 5px;
+margin-left: 10px;
 /* align-items: center; */
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
      'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 font-size: 9px;
-font-weight: 500;
 line-height: 1.2;
 margin: 10px;
 }
