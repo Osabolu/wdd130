@@ -100,7 +100,7 @@ body{
     font-size: 9px;
     font-weight: 500;
     color: rgb(8, 8, 8);
-    margin: 5px;
+    margin: 10px;
     margin-top: 5px;      
 }
 
@@ -128,7 +128,7 @@ body{
 } */
 
 hr{
-    width: 90%;
+    width: 93%;
     margin-left: 10px;
 }
 
