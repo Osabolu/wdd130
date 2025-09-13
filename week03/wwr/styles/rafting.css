@@ -1,0 +1,150 @@
+    :root{
+     --pulse-speed: 1.2s;
+    --pulse-color: #edc5d2;
+    --pulse-intensity: 1.008;
+    
+    --bg01: linear-gradient(180deg,
+            #4185c9 0%,
+            #181a1d 100%);
+
+    --bg02: linear-gradient(135deg,
+            #67717a,
+            #0d4ccb);
+
+    --bg03: linear-gradient(135deg,
+            #2c3136,
+            #1d2023);
+
+    --bg04: #040404;
+
+    --body-font: 18px;
+    --font-text: 16px
+    --
+    --heading-font: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-text);
+    color: var(--pulse-color);
+    /* overflow-x: hidden; */
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+    /* position: relative; */
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--bg01);
+    /* position: absolute; */
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+    position: relative;
+
+}
+
+.socialmedia {
+    margin: 15px;
+}
+
+.socialmedia a, img {
+    text-decoration: none;
+    font-size: 14px;
+
+}
+
+.hero img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: auto;
+    right: .1%;
+    
+}
+
+.hero h1 {
+    position: absolute;
+    top: 230px;
+    right: .1%;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    opacity: 0.7;
+    background: var(--bg01);
+    color: #fefdfd;
+}
+
+ /* section h2 {
+    left: 25%;
+    bottom: 25%; 
+} */
+
+section p {
+    /* position: relative; */
+    color: rgb(255, 255, 255);
+    width: 100%;
+    /* background: #040404; */
+    /* padding: 10px auto; */
+    padding: 0 30px;
+    right: 2%;
+    margin-bottom: 10px;
+    font-size: var(--body-font);
+
+}
+
+section h2 {
+    /* position: relative; */
+    width: 100%;
+    text-align: center; 
+    padding: -5px 30px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 35px;
+    /* margin-left: 2%; */
+}
+
+.hero {
+    /* margin-right: 100px; */
+}
+
+.hero article img {
+    position: relative;
+    float: right;
+    left: 223px;
+    width: 130px;
+    margin: 4px;
+    z-index: 1;
+    top: 106px;
+
+}
+
+.hero article p {
+    /* position: relative; */
+    background: var(--bg01);
+    padding: 40px 35px;
+    margin: 61.9px;
+    right: 290px;
+    top: 40px;
+    width: 157.5%;
+    font-size: var(--font-text);
+}
+
+footer span {
+    /* position: relative; */
+    margin-bottom: 350px;
+    color: #e0d5d5;
+    font-weight: 700;
+    font-size: var(--body-font);
+    /* margin-left: 250px; */
+}
