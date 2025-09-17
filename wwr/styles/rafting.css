@@ -105,7 +105,7 @@ nav, p, section, article {
 
 .hero h1 {
     position: absolute;
-    top: 250px;
+    top: 260px;
     right: 1px;
     width: 100%;
     padding: 10px;
@@ -121,9 +121,8 @@ nav, p, section, article {
     text-align: center;
     font-size: 29px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    top: 132px;
+    top: 151px;
     z-index: 1;
-    left: 100px;
     color: var(--solid-color);
     opacity: 0.7;
     z-index: 1;
@@ -132,11 +131,11 @@ nav, p, section, article {
 .hero article img {
     position: relative;
     float: right;
-    left: 216px;
+    left: 215px;
     width: 162px;
     height: auto;
     margin: 4px;
-    top: 131px;
+    top: 115px;
     z-index: 1;
 }
 
