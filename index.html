@@ -3,6 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD130 Projects - Emmanuel Okpere</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #262d4dff 0%, #3b0f68ff 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        
+        .bio {
+            padding: 40px;
+            text-align: center;
+            background: #ecf0f1;
+        }
+        
+        .bio-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .profile-img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            border: 4px solid #3498db;
+            margin: 0 auto 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(45deg, #3498db, #2c3e50);
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .profile-img img{
+            border-radius: 50%;
+        }
+
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            padding: 40px;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        .project-image {
+            height: 150px;
+            background: linear-gradient(45deg, #3498db, #2c3e50);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .project-content {
+            padding: 25px;
+        }
+        
+        .project-content h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+        
+        .project-content p {
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        .week1 { border-top: 5px solid #3498db; }
+        .week2 { border-top: 5px solid #e74c3c; }
+
+        footer a {
+            text-decoration: none;
+            font-size: 14px;
+            color: #aeadadff;
+            background-color: #4c4747ff;
+            width: 8px;
+            height: 5px;
+            border-radius: 3px;
+        }
+
+        footer a:hover {
+            text-decoration: none;
+            font-size: 14px;
+            color: #f9f5f5ff;
+            background-color: #363535ff;
+            
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #2c3e50;
+            color: white;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+            
+            header {
+                padding: 30px 20px;
+            }
+            
+            header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>WDD130 Web Projects</h1>
+            <p>By Emmanuel Okpere - Software Development Student</p>
+        </header>
+        
+        <section class="bio">
+            <div class="bio-content">
+                <div class="profile-img">  
+                    <img src="images/IMG_0321.JPG" alt="Photo" width="200" height="200" border-radius="50%">
+                </div>
+                <h2>About Me</h2>
+                <p>I am Emmanuel Okpere from Nigeria. I have passion for software development and I hope to do well in this line of profession.</p>
+            </div>
+        </section>
+        
+        <section class="projects-grid">
+            <a href="week01/index.html" class="project-card week1">
+                <div class="project-image">
+                    Week 1 Assignment Image
+                </div>
+                <div class="project-content">
+                    <h3>Week 1 Assignment</h3>
+                    <p>Basic HTML and CSS project setup and introduction to web development fundamentals.</p>
+                </div>
+            </a>
+            
+            <a href="week02/index.html" class="project-card week2">
+                <div class="project-image">
+                    <img src="images/zuma-rock-located-niger-state.jpg" alt="Temple" width="150" >
+                </div>
+                <div class="project-content">
+                    <h3>Week 2 Homepage Enhancement</h3>
+                    <p>Abidjan Ivory Coast Temple project.</p>
+                </div>
+            </a>
+             <a href="week03/rafting.html" class="project-card week3">
+                <div class="project-image">
+                    <img src="images/White-Water-Rafting.jpg" alt="Temple" width="150" >
+                </div>
+                <div class="project-content">
+                    <h3>Week 3 White water Rafting</h3>
+                    <p>Exciting Expenditions💦 project.</p>
+                </div>
+            </a>
+           
+        </section>
+          <footer>
+          <a href="../index.html" class="back-link"> <-- Back </a>
+            <p>🌲🌲2025 Emmanuel Okpere 🌲🌲</p>
+        </footer>
+       
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 130 | Personal Homepage</title>
 </head>
 <body>
@@ -11,4 +246,5 @@
 
     <img src="images/salt-lake-temple.jpg" alt="The Salt Lake Temple.">
 </body>
-</html>
+</html> {% endcomment %}
+
