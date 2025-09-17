@@ -14,7 +14,7 @@
 
 --wave-color: linear-gradient(135deg,
         #57a2c3,
-        #ffc422);
+        #ffe522);
 
 --lighter-gray: linear-gradient(135deg,
         #2c3136,
@@ -121,49 +121,23 @@ nav, p, section, article {
     text-align: center;
     font-size: 29px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    top: 140px;
+    top: 132px;
     z-index: 1;
     left: 100px;
     color: var(--solid-color);
     opacity: 0.7;
+    z-index: 1;
 }
-
-section p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: var(--light-color);
-    width: 102%;
-    align-items: center;
-    padding: 20px 20px;
-    margin-top: -10px;
-    font-size: 14px;
-    font-weight: 600;
-    margin-left: -1px;
-    border-radius: 6%;
-
-}
-
-section h2 {
-    width: 48%;
-    text-align: center; 
-    padding: -5px 0;
-    margin-left: 330px;
-    color: var(--light-color);
-    font-size: 40px;
-    opacity: 0.8;
-    border-radius: 5px;
-}
-
 
 .hero article img {
     position: relative;
     float: right;
-    left: 215px;
+    left: 216px;
     width: 162px;
     height: auto;
     margin: 4px;
-    z-index: 1;
     top: 131px;
-
+    z-index: 1;
 }
 
 .hero article p {
@@ -176,10 +150,31 @@ section h2 {
     width: 155%;
     font-size: 15px;
     font-weight: 900;
-    color: var(--bg04);
+    color: var(--solid-color);
     opacity: 0.8;
     border-radius: 0 0 20px;
     box-shadow: 0 0 20px;
+}
+
+section p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--light-color);
+    width: 100%;
+    align-items: center;
+    padding: 5px 22px;
+    bottom: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6%;
+
+}
+
+section h2 {
+    text-align: center; 
+    margin-left: 10px;
+    color: var(--light-color);
+    font-size: 40px;
+    border-radius: 5px;
 }
 
 footer {
@@ -187,18 +182,18 @@ footer {
     color: var(--accent-color);
     font-size: 17px;
     font-weight: 600;
-    padding: 5px;
-    margin-top: 42px;
-    margin-left: 350px;
-    overflow: auto; 
+    padding: 8px 7px;
+    align-items: center;
+    float: right;
 }
 
 footer .footer-content {
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 
