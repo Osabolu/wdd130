@@ -73,14 +73,19 @@ nav, p, section, article {
     display: flex;
     gap: 20px;
     margin-left: 20px;
-    font-size: 50px;
 
 }
+
+.social-icon{
+    width: 50px;
+}
+
 
 .socialmedia a {
     display: inline-block;
     text-decoration: none;
     margin-right: 3px;
+    
 
 }
 
