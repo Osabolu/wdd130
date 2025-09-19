@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"name": "wdd130",
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"git.confirmSync": false,
+		"explorer.fileNesting.expand": false,
+		"explorer.compactFolders": false,
+		"explorer.decorations.colors": false,
+		"explorer.decorations.badges": false,
+		"explorer.openEditors.minVisible": 0,
+		"explorer.autoOpenDroppedFile": false,
+		"fiveServer.port": 5501,
+		"fiveServer.injectBody": false,
+		"liveServer.settings.port": 5503,
+		"cSpell.words": [
+			"Okpere's",
+			"socialmedia",
+			"stylesheet"
+		]
+	}
+}
