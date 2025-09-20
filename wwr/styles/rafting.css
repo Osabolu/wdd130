@@ -76,11 +76,11 @@ header nav a {
 
 }
 
-header nav a:hover {
+/* header nav a:hover {
     background: var(--lemon-color);
     color: var(--solid-color);
     box-shadow: 0 0 25px rgba(10, 255, 210, 0.9);
-}
+} */
 
 h1, h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -166,7 +166,6 @@ nav, p, section, article {
 }
 
 section h2 {
-    /* position: relative; */
     text-align: center; 
     margin-top: 60px;
     color: var(--army-green);
@@ -175,8 +174,7 @@ section h2 {
     background: linear-gradient(90deg, #5f6060, #7d9eac, #f7f8f9, 
     #8d8e8e );
     padding: 10px 30px;
-    /* opacity: 0.7; */
-    z-index: 1;
+    opacity: 0.7;
 }
 
  section h2:after {
@@ -213,8 +211,10 @@ section h2 {
     position: relative;
     width: 230px;
     height: auto;
-    border: 2px solid #1d1e1e;
-    box-shadow: 0 5px 15px rgba(141, 140, 140, 0.1);
+    border: 2px solid #0affd2;
+    box-shadow: 0 0 15px rgba(10, 255, 210, 0.7);
+    /* border: 2px solid #1d1e1e; */
+    /* box-shadow: 0 5px 15px rgba(141, 140, 140, 0.1); */
     border-radius: 8px;
     grid-column: 2;
     grid-row: 1;
@@ -268,6 +268,7 @@ section h2 {
 figure img {
     border-radius: 4px;
     margin: 30px 15px;
+   
 }
 
 figure figcaption {
