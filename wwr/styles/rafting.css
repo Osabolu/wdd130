@@ -129,7 +129,7 @@ nav, p, section, article {
     font-size: 32px;
     font-weight: 600;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    top: 140px;
+    top: 130px;
     z-index: 1;
     color: var(--solid-color);
     opacity: 0.7;
@@ -141,7 +141,7 @@ nav, p, section, article {
     left: 160px;
     width: 172px;
     height: auto;
-    top: 94px;
+    top: 83px;
     border: 2px solid #0affd2;
     box-shadow: 0 0 15px rgba(10, 255, 210, 0.7);
     border-radius: 4px;
@@ -152,10 +152,10 @@ nav, p, section, article {
     position: relative;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: var(--wave-color);
-    padding: 40px 35px;
+    padding: 45px 35px;
     margin: 0 auto;
     right: 218px;
-    top: 100px;
+    top: 85px;
     width: 155%;
     font-size: 13px;
     font-weight: 900;
@@ -209,7 +209,7 @@ section h2 {
 
 .centered-image {
     position: relative;
-    width: 180px;
+    width: 200px;
     height: auto;
     border: 2px solid #0affd2;
     box-shadow: 0 0 15px rgba(10, 255, 210, 0.7);
@@ -231,7 +231,7 @@ section h2 {
     grid-row: 1;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-    gap: 7%;
+    gap: 8%;
     right: 11px;  
     bottom: 21px;
     /* width: 103%; */
