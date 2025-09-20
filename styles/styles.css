@@ -95,7 +95,7 @@ main {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 2px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
     border-radius: 4px;
@@ -140,6 +140,8 @@ aside {
     border: 1px solid  rgba(0, 0, 0, 0.2);
     padding: 1em;
     background-color: #eee;
+    /* background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); */
+    /* color: white; */
     color: #333;
     text-align: center;
     border-radius: 8px;
@@ -151,6 +153,7 @@ aside img {
     height: auto;
     border-radius: 4px;
     margin-bottom: 15px;
+
 }
 
 aside h2 {
@@ -165,6 +168,9 @@ footer {
     margin-top: 1em;
     border-top: 1px solid #000;
     text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }
 
 ul {
