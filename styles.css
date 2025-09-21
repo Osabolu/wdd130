@@ -19,6 +19,12 @@ h1 {
     color: steelblue;
 }
 
+ main {
+    max-width: 840px;
+    margin: 20px auto;
+
+}
+
 main img {
     width: 150px;
     height: auto;
