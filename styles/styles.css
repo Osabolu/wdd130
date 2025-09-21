@@ -50,6 +50,7 @@ h1 {
 
  main {
     margin: 20px auto;
+    max-width: 840px;
 
 }
 
@@ -92,7 +93,7 @@ p {
 } 
 
 aside {
-     width: 20em;
+    width: 20em;
     margin: 1em;
     border: 1px solid  rgba(0, 0, 0, 0.2);
     padding: 1em;
@@ -107,13 +108,13 @@ aside {
     /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); */
 }
 
-/* aside img {
+aside img {
     width: 200px;
-    height: auto; */
+    height: auto;
     /* border-radius: 4px;
     margin-bottom: 15px; */
 
-/* } */
+}
 /* 
  aside h2 {
     position: absolute;
