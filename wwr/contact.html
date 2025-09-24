@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Emmanue Okpere's BYU -Idaho WDD130 course Contact Us Page. Contact information for White Water Rafting Company.">
+        <meta name="description" content="Emmanue Okpere's BYU -Idaho WDD130 course Contact Us Page.
+        Contact the White Water Rafting Company for booking, questions, and trip information.
+        Get in touch via phone, email, or our online form for your next adventure.">
         <meta name="author" content="Emmanuel Okpere">
         <link rel="stylesheet" href="styles/rafting.css">
         <title>Emmanuel Okpere | WDD130</title>
@@ -14,7 +16,7 @@
             background: var(--teal-blue);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             max-height: 100vh;
-        }
+            }
 
             .btn {
             background: linear-gradient(135deg, var(--river-blue) 0%, var(--water-teal) 100%);
@@ -245,8 +247,17 @@
         border-radius: 2px;
         }
 
+        .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+        margin: 3rem 0;
+        align-items: start;
+}
+
         .map-frame {
-        height: 400px;
+        height: 430px;
+        margin-top: 15px;
         border-radius: 10px;
         overflow: hidden;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -292,16 +303,11 @@
                 </div>
             </div>
         <main>       
-            <div class="contact-grid" style="display: grid;grid-template-columns: 1fr 1fr;
-                gap: 2.5rem;margin: 3rem 0;align-items: start;">
-                <div class="map-container" style="padding: 1.2rem;border-radius: 15px;height: fit-content; margin-top: -22px;">
-                    <div class="map-title" style="margin-bottom: 1rem;font-size: 1.5rem;
-                        display: flex;align-items: center;gap: 0.5rem;text-shadow: 0 0 5px rgba(3, 53, 44, 0.7);"><i class="fas fa-map"></i></div>
-                    <div class="map-frame" style="height: 440px;width: 350px;border-radius: 10px;overflow: hidden;  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-                        border: 3px solid rgba(10, 255, 210, 0.3);background: rgba(255, 255, 255, 0.1);
-                        backdrop-filter: blur(10px);padding: 1rem;">
+            <div class="contact-grid">
+                <div class="map-container">
+                    <div class="map-title"><i class="fas fa-map"></i></div>
+                    <div class="map-frame">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15829.054833528653!2d3.8757129!3d7.32424855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1758463645176!5m2!1sen!2sng"
-                            width="" height="";
                             allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
@@ -310,64 +316,62 @@
                 <div class="contact-form" style="padding: 1rem;margin-bottom: 10px;">
                     <div class="form-title" style=""><i class="fas fa-pencil-alt"></i></div>
                     <form>
-                        <div>
-                            <!-- Full Name -->
-                            <div style="display: flex; align-items: center; gap: 5px; margin-bottom: 5px;">
-                                <label for="fullname" style="font-weight: 600;color: #FFFFFF;font-size: 14px; min-width: 16%; text-align: left;text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);">Name:</label>
-                                <input type="text" id="fullname" class="form-control" placeholder="Enter your full name" 
-                                    style="padding: 9px 11px; border: 2px solid rgba(10, 255, 210, 0.3); border-radius: 8px; 
-                                           background: rgba(255, 255, 255, 0.1); color: white; flex: 1;                                   
-                                           transition: all 0.3s ease;">
-                            </div>
-
-                            <!-- Email Address -->
-                            <div style="display: flex; align-items: center; gap: 5px; margin-bottom: 3px;">
-                                <label for="email" style="font-weight: 600; color: #FFFFFF;font-size: 14px; min-width: 16%; text-align: left;text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);">Email:</label>
-                                <input type="email" id="email" class="form-control" placeholder="Enter your email" 
+                        <!-- Full Name -->
+                        <div style="display: flex; align-items: center; gap: 5px; margin-bottom: 5px;">
+                            <label for="fullname" style="font-weight: 600;color: #FFFFFF;font-size: 14px; min-width: 16%; text-align: left;text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);">Name:</label>
+                            <input type="text" id="fullname" class="form-control" placeholder="Enter your full name" 
                                 style="padding: 9px 11px; border: 2px solid rgba(10, 255, 210, 0.3); border-radius: 8px; 
-                                background: rgba(255, 255, 255, 0.1); color: white; flex: 1;
-                                transition: all 0.3s ease;">
-                            </div>                            
-                            <div class="radio-group" style="margin: 1rem 0;">
-                            <!-- Main label for the entire group -->
-                            <div style="display: flex; align-items: flex-start; gap: 5px;">
-                                <label style="font-weight: 600; color: #FFFFFF;font-size: 14px; min-width: 60px; padding-top: 3px;margin-top: 45px;text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);">Message<br>Purpose:</label>
-                                <div style="flex: 1;">
-                                    <!-- First radio option -->
-                                    <div class="radio-option" style="display: flex; align-items: center; padding: 9px; border-radius: 8px; transition: background-color 0.5s; background: rgba(255, 255, 255, 0.1); margin-bottom: 8px;">
-                                        <input type="radio" style="margin-right: 12px; accent-color: var(--lemon-color); transition: all 0.5s;transform: scale(1.2);cursor: pointer;" id="general" name="message-purpose" checked>
-                                        <label for="general" style="margin: 0;font-weight: 600;font-size: 14px;color: white;text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);">General Enquiry</label>
-                                    </div>              
-                                    <!-- Second radio option -->
-                                    <div class="radio-option" style="display: flex; align-items: center; padding: 9px; border-radius: 8px; transition: background-color 0.3s; background: rgba(255, 255, 255, 0.1); margin-bottom: 8px;">
-                                        <input type="radio" style="margin-right: 12px; accent-color: var(--lemon-color);transition: all 0.5s; transform: scale(1.2);cursor: pointer;" id="reservation" name="message-purpose">
-                                        <label for="reservation" style="margin: 0;font-weight: 600;font-size: 14px;color: white;text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);">Reservation Question</label>
-                                    </div>
-                                    
-                                    <!-- Third radio option -->
-                                    <div class="radio-option" style="display: flex; align-items: center; padding: 9px; border-radius: 8px; transition: background-color 0.3s; background: rgba(255, 255, 255, 0.1);">
-                                        <input type="radio" style="margin-right: 12px; accent-color: var(--lemon-color);transition: all 0.5s; transform: scale(1.2);cursor: pointer;" id="suggestion" name="message-purpose">
-                                        <label for="suggestion" style="margin: 0;font-weight: 600;font-size: 14px;color: white;text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);">Website Suggestion</label>
-                                    </div>
-                                </div>
-                            </div>                                                                          
-                            <div class="form-group">
-                                <label for="message" style="display: block;margin-bottom: 0.2rem;font-weight: 600; color: #FFFFFF;font-size: .9rem;text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);">Your Message</label>
-                                <textarea id="message" class="form-control" style=" min-height: 60px;resize: vertical;width: 370px;" placeholder="Type here..."></textarea>
-                            </div>
-                            
-                            <div class="box-group" style="display: flex;align-items: center;padding: 10px;background: rgba(29, 28, 28, 0.05);
-                                border-radius: 8px;border: 1px solid rgba(10, 255, 210, 0.2);">
-                                <input type="checkbox" style=" margin-right: 12px;accent-color: var(--lemon-color);transition: all 3s;transform: scale(1.2);cursor: pointer;" id="newsletter">
-                                <label for="newsletter" style="color: #FFFFFF;font-weight: 600;font-size: 14px;text-shadow: 0 1px 4px rgba(3, 3, 3, 0.5);">Please subscribe me to the monthly newsletter</label>
-                            </div>
-                            
-                            <button type="submit" class="btn" style="  background: linear-gradient(135deg, var(--river-blue) 0%, var(--water-teal) 100%);color: white;border: none;padding: 10px 35px;
-                                font-size: 1rem;font-weight: 700;border-radius: 12px;cursor: pointer;transition: all 0.4s;display: inline-block;text-align: center;
-                                width: 100%;margin: 10px 0 0 2px;box-shadow: 0 5px 20px rgba(21, 152, 149, 0.4);border: 2px solid rgba(10, 255, 210, 0.3);">
-                                <i class="fas fa-paper-plane"></i> Submit
-                            </button>
+                                        background: rgba(255, 255, 255, 0.1); color: white; flex: 1;                                   
+                                        transition: all 0.3s ease;">
                         </div>
+
+                        <!-- Email Address -->
+                        <div style="display: flex; align-items: center; gap: 5px; margin-bottom: 3px;">
+                            <label for="email" style="font-weight: 600; color: #FFFFFF;font-size: 14px; min-width: 16%; text-align: left;text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);">Email:</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email" 
+                            style="padding: 9px 11px; border: 2px solid rgba(10, 255, 210, 0.3); border-radius: 8px; 
+                            background: rgba(255, 255, 255, 0.1); color: white; flex: 1;
+                            transition: all 0.3s ease;">
+                        </div>                            
+                        <div class="radio-group" style="margin: 1rem 0;">
+                        <!-- Main label for the entire group -->
+                        <div style="display: flex; align-items: flex-start; gap: 5px;">
+                            <label style="font-weight: 600; color: #FFFFFF;font-size: 14px; min-width: 60px; padding-top: 3px;margin-top: 45px;text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);">Message<br>Purpose:</label>
+                            <div style="flex: 1;">
+                                <!-- First radio option -->
+                                <div class="radio-option" style="display: flex; align-items: center; padding: 9px; border-radius: 8px; transition: background-color 0.5s; background: rgba(255, 255, 255, 0.1); margin-bottom: 8px;">
+                                    <input type="radio" style="margin-right: 12px; accent-color: var(--lemon-color); transition: all 0.5s;transform: scale(1.2);cursor: pointer;" id="general" name="message-purpose" checked>
+                                    <label for="general" style="margin: 0;font-weight: 600;font-size: 14px;color: white;text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);">General Enquiry</label>
+                                </div>              
+                                <!-- Second radio option -->
+                                <div class="radio-option" style="display: flex; align-items: center; padding: 9px; border-radius: 8px; transition: background-color 0.3s; background: rgba(255, 255, 255, 0.1); margin-bottom: 8px;">
+                                    <input type="radio" style="margin-right: 12px; accent-color: var(--lemon-color);transition: all 0.5s; transform: scale(1.2);cursor: pointer;" id="reservation" name="message-purpose">
+                                    <label for="reservation" style="margin: 0;font-weight: 600;font-size: 14px;color: white;text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);">Reservation Question</label>
+                                </div>
+                                
+                                <!-- Third radio option -->
+                                <div class="radio-option" style="display: flex; align-items: center; padding: 9px; border-radius: 8px; transition: background-color 0.3s; background: rgba(255, 255, 255, 0.1);">
+                                    <input type="radio" style="margin-right: 12px; accent-color: var(--lemon-color);transition: all 0.5s; transform: scale(1.2);cursor: pointer;" id="suggestion" name="message-purpose">
+                                    <label for="suggestion" style="margin: 0;font-weight: 600;font-size: 14px;color: white;text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);">Website Suggestion</label>
+                                </div>
+                            </div>
+                        </div>                                                                          
+                        <div class="form-group">
+                            <label for="message" style="display: block;margin-bottom: 0.2rem;font-weight: 600; color: #FFFFFF;font-size: .9rem;text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);">Your Message</label>
+                            <textarea id="message" class="form-control" style=" min-height: 60px;resize: vertical;width: 370px;" placeholder="Type here..."></textarea>
+                        </div>
+                        
+                        <div class="box-group" style="display: flex;align-items: center;padding: 10px;background: rgba(29, 28, 28, 0.05);
+                            border-radius: 8px;border: 1px solid rgba(10, 255, 210, 0.2);">
+                            <input type="checkbox" style=" margin-right: 12px;accent-color: var(--lemon-color);transition: all 3s;transform: scale(1.2);cursor: pointer;" id="newsletter">
+                            <label for="newsletter" style="color: #FFFFFF;font-weight: 600;font-size: 14px;text-shadow: 0 1px 4px rgba(3, 3, 3, 0.5);">Please subscribe me to the monthly newsletter</label>
+                        </div>
+                        
+                        <button type="submit" class="btn" style="  background: linear-gradient(135deg, var(--river-blue) 0%, var(--water-teal) 100%);color: white;border: none;padding: 10px 35px;
+                            font-size: 1rem;font-weight: 700;border-radius: 12px;cursor: pointer;transition: all 0.4s;display: inline-block;text-align: center;
+                            width: 100%;margin: 10px 0 0 2px;box-shadow: 0 5px 20px rgba(21, 152, 149, 0.4);border: 2px solid rgba(10, 255, 210, 0.3);">
+                            <i class="fas fa-paper-plane"></i> Submit
+                        </button>
                     </form>
                 </div>
             </div>
