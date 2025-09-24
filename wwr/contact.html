@@ -3,34 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Emmanue Okpere's BYU -Idaho WDD130 course Contact Us Page. Contact information and e-mailing.">
+        <meta name="description" content="Emmanue Okpere's BYU -Idaho WDD130 course Contact Us Page. Contact information for White Water Rafting Company.">
         <meta name="author" content="Emmanuel Okpere">
         <link rel="stylesheet" href="styles/rafting.css">
         <title>Emmanuel Okpere | WDD130</title>
     </head>
-    <body>
 
-        <style>
-
-        ::-webkit-scrollbar{
-            width: 9px;
-        }
-
-        ::-webkit-scrollbar-thumb{
-            background: linear-gradient(transparent, #1ffce2ff);
-            border-radius: 6px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover{
-            background: linear-gradient(transparent, #018a74ff);
-        }
-
+    <style>
         body {
             background: var(--teal-blue);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             max-height: 100vh;
-
         }
+
             .btn {
             background: linear-gradient(135deg, var(--river-blue) 0%, var(--water-teal) 100%);
             color: white;
@@ -61,20 +46,17 @@
             background: rgba(10, 255, 210, 0.1);
         }
 
-        .checkbox-group input[type="checkbox"] {
+        .box-group input[type="checkbox"] {
             margin-right: 12px;
             accent-color: var(--lemon-color);
         }
 
-            .checkbox-group {
-            }
-
-            .form-control::placeholder {
-            font-family: font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: rgba(95, 93, 93, 0.6);
-            font-size: 13px;
-            padding: 5px;
-            font-weight: 600;
+        .form-control::placeholder {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgba(95, 93, 93, 0.6);
+        font-size: 13px;
+        padding: 5px;
+        font-weight: 600;
 
         }
 
@@ -104,7 +86,6 @@
         resize: vertical;
         background: rgba(224, 210, 210, 0.6);
         border: 2px solid #FFFFFF;
-        white-space: 5px;
 
         }
 
@@ -178,12 +159,12 @@
         }
 
         .employee-card {
-        background: white;
+        background: #6c6c6cff;
         width: 250px;
         height: auto;
         line-height: 1px;
         border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        box-shadow: 0 4px 12px rgba(238, 237, 237, 0.3);
         overflow: hidden;
         text-align: center;
         margin: 0;
@@ -192,7 +173,7 @@
         }
 
         .employee-card:hover {
-        box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        box-shadow: 0 4px 12px rgba(255, 255, 255, 0.5);
         transform: translateY(-5%);
 
         }
@@ -208,27 +189,27 @@
         }
 
         .employee-caption {
-        padding: .5rem;
-        background: #f8f9fa;
+        padding: .8rem;
+        background: #0c2b4bff;
         }
 
         .employee-caption h3 {
-        color: #2c3e50;
-        margin: 0 0 0.3rem 0;
+        color: #1cfbddff;
+        margin: 0 0 5px 0;
         font-size: 1.3rem;
         }
 
         .employee-caption .title {
-        color: #240f0fff;
+        color: #ffffffff;
         font-weight: 600;
         margin: 0.25rem 0;
         font-size: 1rem;
         line-height: .9;
-        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+        text-shadow: 0 1px 4px rgba(204, 204, 204, 0.2);
         }
 
         .employee-caption .department {
-        color: #4a4c4dff;
+        color: #ffffffff;
         margin: 0.20rem 0;
         font-style: italic;
         font-weight: 600;
@@ -281,9 +262,9 @@
         .hero h1 {
             opacity: 0.8;
         }
-        </style>
+    </style>
 
-
+    <body>    
         <header>
             <img src="images/z-excitingexpedition.jpg" alt="wwr image">
             <nav>
@@ -313,27 +294,23 @@
         <main>       
             <div class="contact-grid" style="display: grid;grid-template-columns: 1fr 1fr;
                 gap: 2.5rem;margin: 3rem 0;align-items: start;">
-                <div class="map-container"  style="
-                        padding: 1.2rem;border-radius: 15px;height: fit-content; margin-top: -22px;">
-                    <h2 class="map-title" style="margin-bottom: 1rem;font-size: 1.5rem;
-                        display: flex;align-items: center;gap: 0.5rem;text-shadow: 0 0 5px rgba(3, 53, 44, 0.7);"><i class="fas fa-map"></i></h2>
+                <div class="map-container" style="padding: 1.2rem;border-radius: 15px;height: fit-content; margin-top: -22px;">
+                    <div class="map-title" style="margin-bottom: 1rem;font-size: 1.5rem;
+                        display: flex;align-items: center;gap: 0.5rem;text-shadow: 0 0 5px rgba(3, 53, 44, 0.7);"><i class="fas fa-map"></i></div>
                     <div class="map-frame" style="height: 440px;width: 350px;border-radius: 10px;overflow: hidden;  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
                         border: 3px solid rgba(10, 255, 210, 0.3);background: rgba(255, 255, 255, 0.1);
                         backdrop-filter: blur(10px);padding: 1rem;">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15829.054833528653!2d3.8757129!3d7.32424855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1758463645176!5m2!1sen!2sng"
-                            width="100%" height="400%" style="border:0;"
+                            width="" height="";
                             allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
                 </div>
                 <div class="contact-form" style="padding: 1rem;margin-bottom: 10px;">
-                    <h2 class="form-title" style=""><i class="fas fa-pencil-alt"></i></h2>
+                    <div class="form-title" style=""><i class="fas fa-pencil-alt"></i></div>
                     <form>
-                        <!-- Personal Information Section -->
-                        <div style="">
-                            <h3 style="color: #0affd2;"></h3>
-                            
+                        <div>
                             <!-- Full Name -->
                             <div style="display: flex; align-items: center; gap: 5px; margin-bottom: 5px;">
                                 <label for="fullname" style="font-weight: 600;color: #FFFFFF;font-size: 14px; min-width: 16%; text-align: left;text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);">Name:</label>
@@ -347,9 +324,9 @@
                             <div style="display: flex; align-items: center; gap: 5px; margin-bottom: 3px;">
                                 <label for="email" style="font-weight: 600; color: #FFFFFF;font-size: 14px; min-width: 16%; text-align: left;text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);">Email:</label>
                                 <input type="email" id="email" class="form-control" placeholder="Enter your email" 
-                                    style="padding: 9px 11px; border: 2px solid rgba(10, 255, 210, 0.3); border-radius: 8px; 
-                                            background: rgba(255, 255, 255, 0.1); color: white; flex: 1;
-                                            transition: all 0.3s ease;">
+                                style="padding: 9px 11px; border: 2px solid rgba(10, 255, 210, 0.3); border-radius: 8px; 
+                                background: rgba(255, 255, 255, 0.1); color: white; flex: 1;
+                                transition: all 0.3s ease;">
                             </div>                            
                             <div class="radio-group" style="margin: 1rem 0;">
                             <!-- Main label for the entire group -->
@@ -357,19 +334,18 @@
                                 <label style="font-weight: 600; color: #FFFFFF;font-size: 14px; min-width: 60px; padding-top: 3px;margin-top: 45px;text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);">Message<br>Purpose:</label>
                                 <div style="flex: 1;">
                                     <!-- First radio option -->
-                                    <div class="radio-option" style="display: flex; align-items: center; padding: 9px; border-radius: 8px; transition: background-color 0.5s; background: background: rgba(40, 40, 40, 0.8); margin-bottom: 8px;">
+                                    <div class="radio-option" style="display: flex; align-items: center; padding: 9px; border-radius: 8px; transition: background-color 0.5s; background: rgba(255, 255, 255, 0.1); margin-bottom: 8px;">
                                         <input type="radio" style="margin-right: 12px; accent-color: var(--lemon-color); transition: all 0.5s;transform: scale(1.2);cursor: pointer;" id="general" name="message-purpose" checked>
                                         <label for="general" style="margin: 0;font-weight: 600;font-size: 14px;color: white;text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);">General Enquiry</label>
-                                    </div>
-                                    
+                                    </div>              
                                     <!-- Second radio option -->
-                                    <div class="radio-option" style="display: flex; align-items: center; padding: 9px; border-radius: 8px; transition: background-color 0.3s; background: background: rgba(40, 40, 40, 0.8); margin-bottom: 8px;">
+                                    <div class="radio-option" style="display: flex; align-items: center; padding: 9px; border-radius: 8px; transition: background-color 0.3s; background: rgba(255, 255, 255, 0.1); margin-bottom: 8px;">
                                         <input type="radio" style="margin-right: 12px; accent-color: var(--lemon-color);transition: all 0.5s; transform: scale(1.2);cursor: pointer;" id="reservation" name="message-purpose">
                                         <label for="reservation" style="margin: 0;font-weight: 600;font-size: 14px;color: white;text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);">Reservation Question</label>
                                     </div>
                                     
                                     <!-- Third radio option -->
-                                    <div class="radio-option" style="display: flex; align-items: center; padding: 9px; border-radius: 8px; transition: background-color 0.3s; background: background: rgba(40, 40, 40, 0.8);">
+                                    <div class="radio-option" style="display: flex; align-items: center; padding: 9px; border-radius: 8px; transition: background-color 0.3s; background: rgba(255, 255, 255, 0.1);">
                                         <input type="radio" style="margin-right: 12px; accent-color: var(--lemon-color);transition: all 0.5s; transform: scale(1.2);cursor: pointer;" id="suggestion" name="message-purpose">
                                         <label for="suggestion" style="margin: 0;font-weight: 600;font-size: 14px;color: white;text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);">Website Suggestion</label>
                                     </div>
@@ -380,9 +356,9 @@
                                 <textarea id="message" class="form-control" style=" min-height: 60px;resize: vertical;width: 370px;" placeholder="Type here..."></textarea>
                             </div>
                             
-                            <div class="checkbox-group" style="display: flex;align-items: center;padding: 5px;background: rgba(29, 28, 28, 0.05);
+                            <div class="box-group" style="display: flex;align-items: center;padding: 10px;background: rgba(29, 28, 28, 0.05);
                                 border-radius: 8px;border: 1px solid rgba(10, 255, 210, 0.2);">
-                                <input type="checkbox" style=" margin-right: 12px;accent-color: var(--lemon-color);transform: scale(1.2);cursor: pointer;" id="newsletter">
+                                <input type="checkbox" style=" margin-right: 12px;accent-color: var(--lemon-color);transition: all 3s;transform: scale(1.2);cursor: pointer;" id="newsletter">
                                 <label for="newsletter" style="color: #FFFFFF;font-weight: 600;font-size: 14px;text-shadow: 0 1px 4px rgba(3, 3, 3, 0.5);">Please subscribe me to the monthly newsletter</label>
                             </div>
                             
@@ -403,7 +379,7 @@
             <div class="employee-grid">
                 <div class="employee-card">
                     <div class="profile-image">
-                        <img src="images/Wearing-Sunglasses-with-a-Strap.jpg" alt="Chloe Jacobson">
+                        <img src="images/chloe.jpg" alt="Chloe Jacobson">
                     </div>
                     <div class="employee-caption">
                         <h3>Chloe Jacobson</h3>
@@ -413,7 +389,7 @@
                 </div>
                 <div class="employee-card">
                     <div class="profile-image">
-                        <img src="images/images(media).jpeg" alt="Michelle Sands">
+                        <img src="images/michelle.jpeg" alt="Michelle Sands">
                     </div>
                     <div class="employee-caption">
                         <h3>Michelle Sands</h3>
@@ -423,7 +399,7 @@
                 </div>
                 <div class="employee-card">
                     <div class="profile-image">
-                        <img src="images/Emilie-Lederer(tour guide).jpg" alt="Emilie-Lederer">
+                        <img src="images/emilie-lederer.jpg" alt="Emilie-Lederer">
                     </div>
                     <div class="employee-caption">
                         <h3>Emilie-Lederer</h3>
