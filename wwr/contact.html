@@ -3,279 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Emmanuel Okpere's BYU -Idaho WDD130 course.
-        Contact the White Water Rafting Company for booking, questions, and trip
-        information. Get in touch via phone, email, or our online form.">
+        <meta name="description" content="Emmanue Okpere's BYU -Idaho WDD130 course Contact Us Page. Contact information and e-mailing.">
         <meta name="author" content="Emmanuel Okpere">
         <link rel="stylesheet" href="styles/rafting.css">
         <title>Emmanuel Okpere | WDD130</title>
     </head>
+    <body>
 
-    <style>
-        body {
-            background: var(--teal-blue);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            max-height: 100vh;
-            }
-
-            .btn {
-            background: linear-gradient(135deg, var(--river-blue) 0%, var(--water-teal) 100%);
-            color: white;
-            border: none;
-            padding: 18px 35px;
-            font-size: 1.2rem;
-            font-weight: 700;
-            border-radius: 12px;
-            cursor: pointer;
-            transition: all 0.4s;
-            display: inline-block;
-            text-align: center;
-            width: 100%;
-            margin-top: 15px;
-            box-shadow: 0 5px 20px rgba(21, 152, 149, 0.4);
-            border: 2px solid rgba(10, 255, 210, 0.3);
-        }
-
-        .btn:hover {
-            background: linear-gradient(135deg, var(--water-teal) 0%, var(--river-blue) 100%);
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(21, 152, 149, 0.5);
-        }
-
-
-        .radio-option:hover {
-            transform: scaleX(1.02);
-            background: rgba(10, 255, 210, 0.1);
-        }
-
-        .box-group input[type="checkbox"] {
-            margin-right: 12px;
-            accent-color: var(--lemon-color);
-        }
-
-        .form-control::placeholder {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: rgba(95, 93, 93, 0.6);
-        font-size: 13px;
-        padding: 5px;
-        font-weight: 600;
-
-        }
-
-        .form-control:focus {
-            outline: none;
-            box-shadow: 0 0 0 3px rgba(0, 23, 19, 0.2);
-            background: #fff;
-            padding: 7px;
-            color: rgba(10, 0, 0, 0.6);
-            font-weight: 600;
-        }
-
-        .form-group {
-            margin-bottom: 1.8rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.7rem;
-            font-weight: 600;
-            color: var(--light-color);
-            font-size: 0.7rem;
-        }
-
-        textarea.form-control {
-        min-height: 150px;
-        resize: vertical;
-        background: rgba(224, 210, 210, 0.6);
-        border: 2px solid #FFFFFF;
-
-        }
-
-        .hero p {
-        font-size: 14px;
-        color: var(--light-color);
-        margin: 0;
-        }
-
-        footer {
-        position: relative;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: var(--army-green);
-        font-size: 17px;
-        font-weight: 600;
-        padding: 0 7px;
-        align-items: center;
-        }
-
-        footer .footer-content {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        }
-
-        footer .footer-content p {
-        background: var(--light-color);
-        border-radius: 10px;
-        box-shadow: 0 1px 1px #333;
-        height: auto;
-        } 
-
-        textarea [placeholder] {
-        font-size:10px;
-        }
-
-        .info-item {
-            padding: 2px 10px;
-            text-align: center;
-            line-height: 1px;
-        }
-
-        .info-item i {
-            font-size: 2.5rem;
-            color: var(--lemon-color);
-            margin-bottom: 1rem;
-            text-shadow: 0 0 10px rgba(10, 255, 210, 0.7);
-        }
-
-        .info-item h3 {
-            color: var(--light-color);
-            margin-bottom: 0.5rem;
-            font-size: 1.3rem;
-        }
-
-        .info-item p {
-        color: #FFFFFF;
-        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
-        font-weight: 600;    
-            
-        }
-        .employee-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 5rem;
-        padding: 0 9rem;
-        width: 100%;
-        min-width: 870px;
-        }
-
-        .employee-card {
-        background: #6c6c6cff;
-        width: 250px;
-        height: auto;
-        line-height: 1px;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(238, 237, 237, 0.3);
-        overflow: hidden;
-        text-align: center;
-        margin: 0;
-        transition: all 0.5s;
-        margin-top: 100px;
-        }
-
-        .employee-card:hover {
-        box-shadow: 0 4px 12px rgba(255, 255, 255, 0.5);
-        transform: translateY(-5%);
-
-        }
-
-        .profile-image img {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin: 7px auto;
-        border: 4px solid rgba(10, 255, 210, 0.7);
-        margin-left: 100px;
-        }
-
-        .employee-caption {
-        padding: .8rem;
-        background: #0c2b4bff;
-        }
-
-        .employee-caption h3 {
-        color: #1cfbddff;
-        margin: 0 0 5px 0;
-        font-size: 1.3rem;
-        }
-
-        .employee-caption .title {
-        color: #ffffffff;
-        font-weight: 600;
-        margin: 0.25rem 0;
-        font-size: 1rem;
-        line-height: .9;
-        text-shadow: 0 1px 4px rgba(204, 204, 204, 0.2);
-        }
-
-        .employee-caption .department {
-        color: #ffffffff;
-        margin: 0.20rem 0;
-        font-style: italic;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 0.95;
-        }
-
-        .header {
-        position: relative; 
-        bottom: 80px;
-        }
-
-        .header h2 {
-        position: absolute;
-        left: 52%;
-        top: 50%;
-        transform: translateX(-50%);
-        color: var(--solid-color);
-        text-shadow: 0 1px 4px rgba(255, 255, 255, 0.5);
-        font-size: 40px;
-        border-radius: 5px;
-        text-align: center; 
-        white-space: nowrap; 
-        }
-
-        .header h2:after {
-        content: '';
-        display: block;
-        width: 100px;
-        height: 4px;
-        background: var(--emrald-color);
-        margin: 5px auto;
-        border-radius: 2px;
-        }
-
-        .contact-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2.5rem;
-        margin: 3rem 0;
-        align-items: start;
-}
-
-        .map-frame {
-        height: 430px;
-        margin-top: 15px;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-        border: 2px solid rgba(10, 255, 210, 0.3);
-        }
-
-        .map-frame iframe {
-        width: 100%;
-        height: 100%;
-        border: none;
-        }
-
-        .hero h1 {
-            opacity: 0.8;
-        }
-    </style>
-
-    <body>    
         <header>
             <img src="images/z-excitingexpedition.jpg" alt="wwr image">
             <nav>
@@ -285,150 +19,137 @@
                 <a href="contact.html">Contact Us</a>
             </nav>
         </header>
-            <div class="hero">
-                <h1>White Water Rafting Company</h1>
-                <div class="contact-info" style="text-align: center;margin-top: 170px;line-height: 3px; color: var(--light-foam);">
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>23, Olorunkemi Estate Elebu. Ibadan</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <p>(+234) 8166559057, (+234) 9026673033</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>emmanuelokpere911@gmail.com</p>
-                    </div>
+        <div class="hero">
+            <h1>White Water Rafting Company</h1>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>23, Olorunkemi Estate Elebu. Ibadan</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>(+234) 8166559057, (+234) 9026673033</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>emmanuelokpere911@gmail.com</p>
                 </div>
             </div>
-        <main>       
+        </div>
+        <main class="main-content">
             <div class="contact-grid">
                 <div class="map-container">
-                    <div class="map-title"><i class="fas fa-map"></i></div>
+                    <p class="map-title"><i class="fas fa-map-marked-alt"></i></p>
                     <div class="map-frame">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15829.054833528653!2d3.8757129!3d7.32424855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1758463645176!5m2!1sen!2sng"
-                            allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
                 </div>
-                <div class="contact-form" style="padding: 1rem;margin-bottom: 10px;">
-                    <div class="form-title" style=""><i class="fas fa-pencil-alt"></i></div>
-                    <form>
-                        <!-- Full Name -->
-                        <div style="display: flex; align-items: center; gap: 5px; margin-bottom: 5px;">
-                            <label for="fullname" style="font-weight: 600;color: #FFFFFF;font-size: 14px; min-width: 16%; text-align: left;text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);">Name:</label>
-                            <input type="text" id="fullname" class="form-control" placeholder="Enter your full name" 
-                                style="padding: 9px 11px; border: 2px solid rgba(10, 255, 210, 0.3); border-radius: 8px; 
-                                        background: rgba(255, 255, 255, 0.1); color: white; flex: 1;                                   
-                                        transition: all 0.3s ease;">
+                <div class="contact-form">
+                    <form class="contact-form-container">
+                        <div class="form-group">
+                            <label for="fullname"class="form-label">Name:</label>
+                            <input type="text" id="fullname" class="form-control" placeholder="Enter your full name" required>
                         </div>
 
-                        <!-- Email Address -->
-                        <div style="display: flex; align-items: center; gap: 5px; margin-bottom: 3px;">
-                            <label for="email" style="font-weight: 600; color: #FFFFFF;font-size: 14px; min-width: 16%; text-align: left;text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);">Email:</label>
-                            <input type="email" id="email" class="form-control" placeholder="Enter your email" 
-                            style="padding: 9px 11px; border: 2px solid rgba(10, 255, 210, 0.3); border-radius: 8px; 
-                            background: rgba(255, 255, 255, 0.1); color: white; flex: 1;
-                            transition: all 0.3s ease;">
-                        </div>                            
-                        <div class="radio-group" style="margin: 1rem 0;">
-                        <!-- Main label for the entire group -->
-                        <div style="display: flex; align-items: flex-start; gap: 5px;">
-                            <label style="font-weight: 600; color: #FFFFFF;font-size: 14px; min-width: 60px; padding-top: 3px;margin-top: 45px;text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);">Message<br>Purpose:</label>
-                            <div style="flex: 1;">
-                                <!-- First radio option -->
-                                <div class="radio-option" style="display: flex; align-items: center; padding: 9px; border-radius: 8px; transition: background-color 0.5s; background: rgba(255, 255, 255, 0.1); margin-bottom: 8px;">
-                                    <input type="radio" style="margin-right: 12px; accent-color: var(--lemon-color); transition: all 0.5s;transform: scale(1.2);cursor: pointer;" id="general" name="message-purpose" checked>
-                                    <label for="general" style="margin: 0;font-weight: 600;font-size: 14px;color: white;text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);">General Enquiry</label>
-                                </div>              
-                                <!-- Second radio option -->
-                                <div class="radio-option" style="display: flex; align-items: center; padding: 9px; border-radius: 8px; transition: background-color 0.3s; background: rgba(255, 255, 255, 0.1); margin-bottom: 8px;">
-                                    <input type="radio" style="margin-right: 12px; accent-color: var(--lemon-color);transition: all 0.5s; transform: scale(1.2);cursor: pointer;" id="reservation" name="message-purpose">
-                                    <label for="reservation" style="margin: 0;font-weight: 600;font-size: 14px;color: white;text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);">Reservation Question</label>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-message">Message<br>Purpose:</label>
+                            <div class="radio-group">
+                            <div class="radio-option">
+                                    <input type="radio"  id="general" name="message-purpose" checked>
+                                    <label for="general">General Enquiry</label>
                                 </div>
-                                
-                                <!-- Third radio option -->
-                                <div class="radio-option" style="display: flex; align-items: center; padding: 9px; border-radius: 8px; transition: background-color 0.3s; background: rgba(255, 255, 255, 0.1);">
-                                    <input type="radio" style="margin-right: 12px; accent-color: var(--lemon-color);transition: all 0.5s; transform: scale(1.2);cursor: pointer;" id="suggestion" name="message-purpose">
-                                    <label for="suggestion" style="margin: 0;font-weight: 600;font-size: 14px;color: white;text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);">Website Suggestion</label>
+                                <div class="radio-option">
+                                    <input type="radio"  id="reservation" name="message-purpose">
+                                    <label for="reservation">Reservation Question</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio"  id="suggestion" name="message-purpose">
+                                    <label for="suggestion">Website Suggestion</label>
                                 </div>
                             </div>
-                        </div>                                                                          
-                        <div class="form-group">
-                            <label for="message" style="display: block;margin-bottom: 0.2rem;font-weight: 600; color: #FFFFFF;font-size: .9rem;text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);">Your Message</label>
-                            <textarea id="message" class="form-control" style=" min-height: 60px;resize: vertical;width: 370px;" placeholder="Type here..."></textarea>
                         </div>
-                        
-                        <div class="box-group" style="display: flex;align-items: center;padding: 10px;background: rgba(29, 28, 28, 0.05);
-                            border-radius: 8px;border: 1px solid rgba(10, 255, 210, 0.2);">
-                            <input type="checkbox" style=" margin-right: 12px;accent-color: var(--lemon-color);transition: all 3s;transform: scale(1.2);cursor: pointer;" id="newsletter">
-                            <label for="newsletter" style="color: #FFFFFF;font-weight: 600;font-size: 14px;text-shadow: 0 1px 4px rgba(3, 3, 3, 0.5);">Please subscribe me to the monthly newsletter</label>
+
+                        <div class="message-group">
+                            <label for="message" class="form-tag">Your Message</label>
+                            <textarea id="message" class="form-control textarea-control" placeholder="Type your message here..." rows="3" required></textarea>
                         </div>
-                        
-                        <button type="submit" class="btn" style="  background: linear-gradient(135deg, var(--river-blue) 0%, var(--water-teal) 100%);color: white;border: none;padding: 10px 35px;
-                            font-size: 1rem;font-weight: 700;border-radius: 12px;cursor: pointer;transition: all 0.4s;display: inline-block;text-align: center;
-                            width: 100%;margin: 10px 0 0 2px;box-shadow: 0 5px 20px rgba(21, 152, 149, 0.4);border: 2px solid rgba(10, 255, 210, 0.3);">
-                            <i class="fas fa-paper-plane"></i> Submit
+
+                        <div class="form-group checkbox-container">
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter">Subscribe me to monthly newsletter</label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
                         </button>
                     </form>
                 </div>
             </div>
-        </main>
-        <section>
-            <div class="header">
-                <h2>We Are Here to Serve You.</h2>
-            </div>
-            <div class="employee-grid">
-                <div class="employee-card">
-                    <div class="profile-image">
-                        <img src="images/chloe.jpg" alt="Chloe Jacobson">
-                    </div>
-                    <div class="employee-caption">
-                        <h3>Chloe Jacobson</h3>
-                        <p class="title"> General Manager</p>
-                        <p class="department">Administration & Finance</p>
-                    </div>
+        </div>
+    </main>
+    <section class="team-section">
+        <div class="header">
+            <h2>We Are Here to Serve You.</h2>
+        </div>
+        <div class="employee-grid">
+            <div class="employee-card">
+                <div class="profile-image">
+                    <img src="images/chloe.jpg" alt="Chloe Jacobson">
                 </div>
-                <div class="employee-card">
-                    <div class="profile-image">
-                        <img src="images/michelle.jpeg" alt="Michelle Sands">
-                    </div>
-                    <div class="employee-caption">
-                        <h3>Michelle Sands</h3>
-                        <p class="title">Safety Director</p>
-                        <p class="department">Safety & Compliance</p>
-                    </div>
-                </div>
-                <div class="employee-card">
-                    <div class="profile-image">
-                        <img src="images/emilie-lederer.jpg" alt="Emilie-Lederer">
-                    </div>
-                    <div class="employee-caption">
-                        <h3>Emilie-Lederer</h3>
-                        <p class="title">Digital Marketing Specialist</p>
-                        <p class="department">Marketing & Sales</p>
-                    </div>
+                <div class="employee-caption">
+                    <h3>Chloe Jacobson</h3>
+                    <p class="title"> General Manager</p>
+                    <p class="department">Administration & Finance</p>
                 </div>
             </div>
-        </section>
-        <footer>
-            <div class="footer-content">
-                <p>©️ 💦 Exciting Expenditions💦 2025 Emmanuel Okpere</p>
-                <nav class="socialmedia">
-                    <a href="https://facebook.com">
+            <div class="employee-card">
+                <div class="profile-image">
+                    <img src="images/michelle.jpeg" alt="Michelle Sands">
+                </div>
+                <div class="employee-caption">
+                    <h3>Michelle Sands</h3>
+                    <p class="title">Safety Director</p>
+                    <p class="department">Safety & Compliance</p>
+                </div>
+            </div>
+            <div class="employee-card">
+                <div class="profile-image">
+                    <img src="images/emilie-lederer.jpg" alt="Emilie-Lederer">
+                </div>
+                <div class="employee-caption">
+                    <h3>Emilie-Lederer</h3>
+                    <p class="title">Digital Marketing Specialist</p>
+                    <p class="department">Marketing & Sales</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p class="copyright"><p>©️ 💦 Exciting Expenditions💦 2025 Emmanuel Okpere</p>
+            <nav class="social-media-nav">
+                <a href="https://facebook.com" aria-label="Facebook">
                     <img src="images/facebook.png" alt="Facebook" class="social-icon">
-                    </a>
-                    <a href="https://linkedin.com">
-                    <img src="images/linkedin.png" alt="Linkedin" class="social-icon">   
-                    </a>
-                    <a href="https://instagram.com">
-                    <img src="images/instagram-image.png" alt="Linkedin" class="social-icon">
-                    </a>
-                </nav>
-            </div>
-        </footer> 
+                </a>
+                <a href="https://linkedin.com" aria-label="LinkedIn">
+                    <img src="images/linkedin.png" alt="LinkedIn" class="social-icon">   
+                </a>
+                <a href="https://instagram.com" aria-label="Instagram">
+                    <img src="images/instagram-image.png" alt="Instagram" class="social-icon">
+                </a>
+            </nav>
+        </div>
+    </footer>
     </body>
 </html>
 
