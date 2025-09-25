@@ -71,7 +71,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: var(--abysmal);
-    /* min-height: 100vh; */
+    min-height: 100vh;
     color: var(--light-color);
     overflow-x: hidden;
     background: var(--teal-blue);
