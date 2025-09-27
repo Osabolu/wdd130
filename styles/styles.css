@@ -64,10 +64,10 @@
             color: #333;
         }
         
-        /* Class Selectors */
+        /* Class Selctors */
         /* =============== */
         
-        .box {
+        /* .box {
             margin: 1rem;
             border: 1px solid rgba(0, 0, 0, 0.2);
             padding: 1rem;
@@ -75,12 +75,12 @@
             color: #333;
             border-radius: 8px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
-        }
+        } */
 
-        .box img {
+        /* .box img {
             margin-top: 40px;
         }
-        
+         */
         aside {
             width: 20rem;
             position: relative;
@@ -91,7 +91,7 @@
             border-radius: 8px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             overflow: hidden;
-            margin: 0;
+            margin: 25px;
             padding: 0;
             height: auto;
         }
@@ -101,6 +101,8 @@
             height: auto;
             border-radius: 4px;
             margin-bottom: 15px;
+            margin-top: 40px;
+
             /* display: block;
             margin-left: auto;
             margin-right: auto; */
@@ -108,7 +110,7 @@
         
         aside h2 {
             position: absolute;
-            top: 15px;
+            /* top: 15px; */
             left: 0;
             right: 0;
             color: rgb(8, 8, 8);
@@ -124,6 +126,7 @@
             padding: 0 15px 15px;
             color: rgb(9, 9, 9);
             font-size: 0.9em;
+            margin-bottom: 40px;
             /* border: 1px solid #000;
             border-radius: 5px; */
         }
