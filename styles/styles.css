@@ -1,0 +1,179 @@
+ /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        nav {
+            background-color: steelblue;
+            padding: 10px;
+            display: block;
+            justify-content: left;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            display: block;
+            color: #fff;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: .8rem;
+            padding: 0.5rem;
+            /* text-decoration: none; */
+            /* margin: 0 10px; */
+            transition: all 0.3s ease;
+        }
+        
+        /* nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            transform: translateY(-2px);
+        } */
+        
+        h1 {
+            color: steelblue;
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            border-bottom: 2px solid steelblue;
+            width: 400px;
+            padding-bottom: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        main img {
+            width: 150px;
+            height: auto;
+            border: 1px solid steelblue;
+            padding: 2px;
+            box-shadow: 0 0 30px gray;
+            /* float: right; */
+            /* margin-left: 20px; */
+            border-radius: 4px;
+        }
+        
+        p {
+            padding: 0;
+            font-size: 0.9em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #333;
+        }
+        
+        /* Class Selectors */
+        /* =============== */
+        
+        .box {
+            margin: 1rem;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            padding: 1rem;
+            background-color: #f9f9f9;
+            color: #333;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .box img {
+            margin-top: 40px;
+        }
+        
+        aside {
+            width: 20rem;
+            position: relative;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            /* background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); */
+            color: rgb(0, 0, 0);
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        aside img {
+            width: 200px;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            /* display: block;
+            margin-left: auto;
+            margin-right: auto; */
+        }
+        
+        aside h2 {
+            position: absolute;
+            top: 15px;
+            left: 0;
+            right: 0;
+            color: rgb(8, 8, 8);
+            /* background-color: rgba(70, 130, 180, 0.8); */
+            padding: 10px;
+            margin-bottom: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.5rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        aside p {
+            padding: 0 15px 15px;
+            color: rgb(9, 9, 9);
+            font-size: 0.9em;
+            /* border: 1px solid #000;
+            border-radius: 5px; */
+        }
+        
+        footer {
+            margin-top: 1em;
+            border-top: 1px solid #000;
+            text-align: center;
+            padding: 20px;
+            background-color: #f5f5f5;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-radius: 5px;
+            height: auto;
+        }
+        
+        /* Grid Layout */
+        /* header, .grid, footer {
+            max-width: 840px;
+            margin: 0 auto;
+        }
+        
+        .grid {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+            margin: 20px auto;
+        }
+        
+        main {
+            grid-column: 2/3;
+            margin: 1rem;
+        }
+        
+        aside {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        } */
+        
+        /* .temple-list {
+            list-style-type: none;
+            font-size: 14px;
+            background-color: #eee;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            width: 300px;
+            height: auto;
+            padding: 15px;
+            margin: 0;
+            border-radius: 8px;
+        }
+        
+        .temple-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        .temple-list li:last-child {
+            border-bottom: none;
+        }
+         */
