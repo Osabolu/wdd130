@@ -613,7 +613,7 @@ left: 500px;
 }
 
 .stat-container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 20px;
     height: 100vh;
@@ -784,12 +784,13 @@ left: 500px;
 
 
 .stats-section {
+    position: relative;
     background: linear-gradient(135deg, #0a2e5a 0%, #1a6fb0 100%);
     width: 100%;
     text-align: center;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    margin-top: 50px;
+    margin: 50px 0;
     
 }
 
@@ -798,7 +799,7 @@ left: 500px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    max-width: 1000px;
+    max-width: 1400px;
     top: 160px;
     margin: 80px auto;
     gap: 40px;
