@@ -83,7 +83,7 @@ header {
     padding: 15px 20px;
     /* gap: 20px; */
     /* top: 17px; */
-    box-shadow: 0 0 10px solid #333;
+    box-shadow: 0 0 10px #333;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
     justify-items: center; 
@@ -674,23 +674,32 @@ left: 500px;
 }
 
 /* Custom Scrollbar for WebKit Browsers (Chrome, Safari, Edge) */
-.features-scroll-container::-webkit-scrollbar {
-    height: 9px;
+.features-scroll-container {
+  /* Enable horizontal scrolling */
+  overflow-x: auto;
+  /* Prevent vertical scrolling */
+  overflow-y: hidden;
+  /* Ensure the container is a single, continuous row */
+  white-space: nowrap;
+  padding: 1rem 0;
+
+  /* Standard scrollbar styling */
+  scrollbar-width: thin; /* Can be 'auto', 'thin', or 'none' */
+  scrollbar-color: rgba(253, 187, 45, 0.7) rgba(255, 255, 255, 0.1); /* thumb color | track color */
 }
 
-.features-scroll-container::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
+/* Optional: Hover effect for the scrollbar */
+.features-scroll-container:hover {
+  scrollbar-color: rgba(253, 187, 45, 0.9) rgba(255, 255, 255, 0.2);
 }
 
-.features-scroll-container::-webkit-scrollbar-thumb {
-    background: rgba(253, 187, 45, 0.7);
-    border-radius: 10px;
-    border: 2px solid rgba(255, 255, 255, 0.1);
-}
-
-.features-scroll-container::-webkit-scrollbar-thumb:hover {
-    background: rgba(253, 187, 45, 0.9);
+/* Style the internal cards to display in a row */
+.feature-card {
+  display: inline-block; /* Key for horizontal layout */
+  vertical-align: top;
+  white-space: normal; /* Reset white-space for card content */
+  width: 300px; /* Set a fixed width for each card */
+  margin-right: 20px; /* Add space between cards */
 }
 
 /* Feature Cards - Fixed width for exactly 3 cards */
@@ -897,7 +906,7 @@ left: 500px;
     text-align: center;
     font-weight: 900;
     color: #0ff;
-    text-shadow: rgba(37, 236, 247, 0.1);
+    text-shadow: 2px 2px 4px rgba(37, 236, 247, 0.3);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
@@ -1018,7 +1027,7 @@ p {
     font-size: 0.9em;
     line-height: 1.6;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-shadow: rgba(0, 9, 9, 0.1);
+    text-shadow: 2px 2px 4px rgba(37, 236, 247, 0.3);
     color: #FFFFFF;
 }
 
