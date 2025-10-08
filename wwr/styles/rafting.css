@@ -391,9 +391,13 @@ left: 500px;
     padding: 10px 20px;
     bottom: 350px;
     left: 30px;
-    
+}
 
-
+.containers {
+    position: relative;
+    max-width: 1200px;
+    padding: 10px 20px;
+    bottom: 310px;
 }
 
 .section-title {
