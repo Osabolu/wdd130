@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Okpere | WDD130</title>  
+    <meta name="description" content="Emmanuel Okpere's BYU-Idaho WDD130 course homepage. Learn more about web fundamentals, HTML and CSS through hands on projects.">
+    <meta name="author" content="Emmanuel Okpere">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/z-excitingexpedition.jpg" alt="wwr image">
+        <nav>        
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>        
+        </nav>
+    </header>
+    <div class="hero-title">
+        <h1>White Water Rafting Company</h1>
+      
+    </div>
+
+    <div class="grid">
+        <aside>
+            <h2>Nigeria</h2>
+            <img src="images/zuma-roc.jpg" alt="Zuma rock in Nigeria">
+            <p>Zuma Rock is a prominent natural granite monolith located in Niger State, Nigeria, near the capital city of Abuja, and is famously depicted on the country's 100 naira banknote. Rising from the flat plains along the main road from Abuja to Kaduna, it is a significant landmark, sometimes referred to as the "Gateway to Abuja" due to its commanding presence.</p>
+        </aside>
+        
+        <main>
+            <h1>Emmanuel Okpere | WDD130</h1>
+            <img src="images/profile.png" alt="Emmanuel Okpere">
+            <p>Hi! I am Emmanuel Okpere, and I'm from Nigeria. When I'm not working, I like to cook and try out various cooking recipes. Currently, I am studying Software development at BYU-Idaho.</p>
+            <p>I enjoy creating web applications and learning about new technologies. My goal is to become a full-stack developer and contribute to innovative projects that make a positive impact on society.</p>
+            <p>When I'm not coding or studying, you can find me in the kitchen experimenting with new recipes. I believe cooking and coding have a lot in common - both require creativity, precision, and the ability to adapt when things don't go as planned!</p>
+            <p>I'm passionate about web development because it allows me to combine technical skills with creative expression. Each project is an opportunity to solve problems and create something that can be used and appreciated by others.</p>
+        </main>
+    </div>
+     <!-- CSS Grid Layout for Rafting Content -->
+
+    <h1 class="section-header">White Water Rafting Features</h1>
+    <section class="rafting-grid">
+        <div class="rafting-card">
+            <h3>Family Adventures</h3>
+            <img src="images/family-friends.jpg" alt="Family Rafting Trip" width="400" onerror="this.style.display='none'">
+            <div class="gallery-overlay">  
+                <p>Safe and exciting rafting experiences designed for families. Gentle rapids and calm waters make this perfect for creating lasting memories with your loved ones.</p>
+            </div>
+        </div>
+        <div class="rafting-card">
+            <h3>Scenic River Tours</h3>
+            <img src="images/scenice-river.jpg" alt="Scenic Rafting" width="400" onerror="this.style.display='none'">
+            <div class="gallery-overlay"> 
+                <p>Enjoy the breathtaking beauty of nature while floating down serene rivers. Our scenic tours combine relaxation with mild adventure for all skill levels.</p>
+            </div>
+        </div>
+        <div class="rafting-card">
+            <h3>Multi-Day Expeditions</h3>
+            <img src="images/wilderness.jpg" alt="Multi-Day Expeditions" onerror="this.style.display='none'">
+            <div class="gallery-overlay"> 
+                <p>Embark on multi-day rafting journeys through pristine wilderness. Camp under the stars and experience the river like never before.</p>
+            </div>
+        </div>
+    </section>
+    <h1 class="section-header">Sign Up And Explore Trips</h1>
+    <div class="display-flex">
+        <section class="newsletter-form">
+            <h2>Stay Updated with Our Adventures!</h2>
+            <form>
+                <div class="form-groups">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+                <div class="form-groups">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+                <button type="submit" class="newsletter-btn">Subscribe to Newsletter</button>
+            </form>
+        </section>
+        <!-- NEW: Call to Action Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready for the Adventure of a Lifetime?</h2>
+                <p>Discover our thrilling white water rafting trips and create unforgettable memories!</p>
+                <a href="trips.html" class="ctab-button">Explore Our Trips Now!</a>
+            </div>
+        </section>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p class="copyright"><p>©️ 💦 Exciting Expenditions💦 2025 Emmanuel Okpere</p>
+            <nav class="social-media-nav">
+                <a href="https://facebook.com" aria-label="Facebook">
+                    <img src="images/facebook-icon.png" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://linkedin.com" aria-label="LinkedIn">
+                    <img src="images/linkedin.png" alt="LinkedIn" class="social-icon">   
+                </a>
+                <a href="https://instagram.com" aria-label="Instagram">
+                    <img src="images/instagram-icon.png" alt="Instagram" class="social-icon">
+                </a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
+
+
