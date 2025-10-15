@@ -1515,7 +1515,7 @@ aside {
 .cta-section {
     background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
     width: 90%;
-    left: 60px;
+    right: 15px;
     padding: 2.5rem;
     text-align: center;
     border-radius: 15px;
@@ -1937,7 +1937,7 @@ bottom: 90px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--light-color);
     padding: 5px  0;
-    bottom: 455px;
+    bottom: 456px;
     /* left: 50px; */
     border-radius: 10px;
     /* background: #1e646a; */
@@ -2009,9 +2009,10 @@ bottom: 90px;
     color: var(--light-color);
     border-radius: 5px;
     padding: 5px 30px;
-    bottom: 450px;
+    bottom: 420px;
     background: #053f42;
-    font-size: 2.4rem;
+    width: 500px;
+    font-size: 2.3rem;
     opacity: .7;
 
 }
@@ -2636,7 +2637,7 @@ footer .footer-content  p {
 .marquee-top {
     font-size: 24px;
     color: #fff;
-    background: linear-gradient(90deg, #ff6b6b, #ffd93d, #6bcf7f, #4d96ff);
+    background: var(--abysmal);
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 10px;
