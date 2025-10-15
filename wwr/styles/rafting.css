@@ -1288,6 +1288,7 @@ h1 {
     /* color: rgb(255, 255, 255); */
     font-size: 1.5rem;
     margin-bottom: 30px;
+    margin-left: 16px;
         
     border-bottom: 2px solid #0ff;
     width: 395px;
@@ -1374,13 +1375,13 @@ aside img {
 
 aside h2 {
     position: absolute;
-    left: 105px;
+    left: 95px;
     right: 0;
     color: #0ff;
     /* color: rgb(0, 255, 238); */
     width: 115px;
     /* color: rgb(255, 255, 255); */
-    padding: 15px;
+    padding: 10px;
     height: auto;
     /* margin-top: 45px; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
