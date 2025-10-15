@@ -336,7 +336,7 @@ nav, p, section, article {
     text-align: center;
     color: rgb(241, 247, 247);
     background: #040404;
-    padding: 10px auto;
+    padding: 10px;
     text-shadow: 0 0 15px rgba(4, 173, 173, 0.5);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     bottom: 390px;
